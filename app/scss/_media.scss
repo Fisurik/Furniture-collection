@@ -41,6 +41,24 @@
     
 }
 
+@media (max-width: 1000px) {
+    .blog__inner {
+        flex-direction: column-reverse;
+    }
+    .blog__aside {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .blog-items {
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .blog-item__img {
+        width: 100%;
+    }
+}
+
 @media(max-width: 925px) {
     .footer__info {
         width: 380px;
@@ -49,7 +67,30 @@
         min-height: 550px;
         height: 550px;
         margin-left: -50px;
-
+    }
+    .gallery__items,
+    .gallery__items-2 {
+        gap: 10px;
+    }
+    .gallery__buttons {
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .about__text {
+        max-width: fit-content;
+    }
+    .about__title {
+        max-width: fit-content;
+        font-size: 31px;
+        line-height: 53px;
+    }
+}
+@media (max-width: 832px) {
+    .inspiration__img {
+        display: none;
+    }
+    .inspiration__content {
+        margin-left: 0;
     }
 }
 
@@ -98,9 +139,20 @@
     .works-path__item-text{
         min-width: 200px;
     }
+    .gallery__buttons {
+        display: grid;
+        justify-content: center;
+    }
+    .gallery__button {
+        width: 400px;
+        padding: 6px 10px;
+    }
     .footer__inner {
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .about__prev {     
+        padding: 80px 0;
     }
     .footer__info {
         width: 100%;
@@ -112,6 +164,28 @@
     .footer__menu {
         margin: 0 auto;
     }
+    .blog-box__items {
+        grid-template-columns: 1fr;
+    }
+    .blog-box__item-link {
+        display: block ;
+    }
+    .blog-box__item-img {
+        width: 100%;
+    }
+    .partners__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .partners__item {
+        max-width: 120px;
+    }
+    .breadcrums--contact {
+        background-color: rgba(223,223,223);
+    }
+   
 }
 @media (max-width: 540px) {
     .logo {
@@ -169,6 +243,9 @@
         font-size: 35px;
         line-height: 43px;
     }
+    .works-path {
+        margin-bottom: 55px;
+    }
     .works-path__items-box {
         border-bottom: none;
         flex-wrap: wrap;
@@ -179,9 +256,11 @@
     .works-path__item02{
         margin-left: 0;
         order: 1;
+        margin-top: 20px;
     }
     .works-path__item03{
         margin-left: 0;
+        padding-top: 0;
     }
     .works-path__items-box::after{
         display: none;
@@ -191,6 +270,38 @@
     }
     .works-path__item03::after{
         display: none;
+    }
+    .gallery__items, 
+    .gallery__items-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gallery__items:nth-child(odd) .gallery__item:first-child, 
+    .gallery__items-2:nth-child(even) .gallery__item-2:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .gallery__items:nth-child(even) .gallery__item:nth-child(3), 
+    .gallery__items-2:nth-child(odd) .gallery__item-2:nth-child(3) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .about__prev {     
+        font-size: 30px;
+    }
+    .inspiration__title {
+        font-size: 27px;
+    }
+    .inspiration__item-title {
+        margin-right: 10px;
+    }
+    .contact-us__content-box {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+    .map {
+        iframe {
+            height: 350px;
+        }
     }
 }
 
@@ -203,6 +314,50 @@
     }
     .new-collection__text {
         max-width: 300px;
+    }
+    .gallery__button {
+        width: 300px;
+    }
+    .partners {
+        display: none;
+    }
+    .contact-us__content-box {
+        max-width: 100%;
+        margin: 0;
+        align-self: center;
+    }
+    .contact-us__form {
+        display: block;
+    }
+    .contact-us__email,
+    .contact-us__name {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contact-us__btn {
+        width: 100%; 
+    }
+    .blog-post-slider__item:nth-child(1) {
+        display: none;
+    }
+    .blog-post-slider__item:nth-child(2) {
+        text-align: center;
+        max-width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+    .blog-post__post-comment-form {
+        display: block;
+        max-width: 100%;
+    }
+    .blog-post__post-comment-message,
+    .blog-post__post-comment-name,
+    .blog-post__post-comment-email,
+    .blog-post__post-comment-submit {
+        width: 100%;
+    }
+    .blog-post__post-comment-email {
+        margin-top: 10px;
     }
     .footer__social-list{
         margin-left: 0;

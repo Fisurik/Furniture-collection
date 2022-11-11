@@ -51,7 +51,7 @@ body{
 
 .breadcrums--contact {
     position: relative;
-    z-index: 15;
+    z-index: 10;
 }
 
 .rightside-menu {
@@ -697,6 +697,9 @@ body{
 .map {
     margin-top: -54px;
     margin-bottom: 55px;
+    iframe {
+        height: 578px;
+    }
 }
 
 .contact-us {
@@ -771,6 +774,7 @@ body{
     object-fit: cover;
     }
     &__text {
+        padding: 0 33px;
         position: absolute;
         text-align: center;
         opacity: 0;

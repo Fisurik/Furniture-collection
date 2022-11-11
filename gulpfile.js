@@ -1,4 +1,4 @@
-const { src, dest, watch, parallel, series }  = require("gulp");
+const { src, dest, watch, parallel, series, task }  = require("gulp");
 
 const scss        = require('gulp-sass')(require('sass'));
 const concat      = require("gulp-concat");
@@ -84,6 +84,7 @@ function watching() {
 
 }
 
+task('deploy', () => src('./dist/**/*').pipe(ghPages()));
 
 exports.styles = styles;
 exports.watching = watching;

@@ -37,6 +37,74 @@ $(function(){
         slidesToScroll: 10,
         dots: true,
         arrows: false,
+        responsive: [
+            {
+              breakpoint: 1800,
+              settings: {
+                slidesToShow: 9,
+                slidesToScroll: 9,
+              }
+            },
+            {
+              breakpoint: 1600,
+              settings: {
+              slidesToShow: 8,
+              slidesToScroll: 8,
+              }
+            },
+            {
+            breakpoint: 1450,
+            settings: {
+            slidesToShow: 7,
+            slidesToScroll: 7,
+            }
+            },
+            {
+                breakpoint: 1250,
+                settings: {
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                }
+              },
+              {
+                breakpoint: 1050,
+                settings: {
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                }
+              },
+              {
+                breakpoint: 900,
+                settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                }
+              },
+              {
+                breakpoint: 750,
+                settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                }
+              },
+              {
+                breakpoint: 550,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: false
+                }
+              },
+              {
+                breakpoint: 375,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false
+                }
+              },
+
+        ]
     });
     $('.blog-item__slider').slick({
         slidesToShow: 1,
