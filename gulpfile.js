@@ -8,6 +8,7 @@ const uglify      = require('gulp-uglify-es').default;
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin    = require("gulp-imagemin");
 const del         = require("del");
+const ghPages = require('gulp-gh-pages');
 
 function images () {
     return src("/app/images/**/*")
